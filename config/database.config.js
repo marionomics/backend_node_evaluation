@@ -1,12 +1,6 @@
 module.exports = {
   url:
-    "mongodb+srv://" +
-    process.env.MONGO_USER +
-    ":" +
+    "mongodb+srv://db_user_platzi_master:" +
     process.env.MONGO_PASSWORD +
-    "@" +
-    process.env.MONGO_HOST +
-    "/" +
-    process.env.MONGO_DB_NAME +
-    "?retryWrites=true&w=majority"
+    "@a71.xceta.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
 };
