@@ -1,0 +1,22 @@
+<script>
+  function populateForm(records) {
+    document.getElementById("phone").value = records[0][11];
+    document.getElementById("RecId").value = records[0][0];
+    document.getElementById("name").value = records[0][9];
+    document.getElementById("paterno").value = records[0][7];
+    document.getElementById("materno").value = records[0][8];
+    document.getElementById("name_enlace").value = records[0][17];
+    document.getElementById("address").value = records[0][10];
+    document.getElementById("email").value = records[0][12];
+    document.getElementById("telefono_adicional").value = records[0][20];
+    document.getElementById("comments").value = records[0][28];
+    document.getElementById("comentario_gral").value = records[0][31];
+    document.getElementById(records[0][4]).checked = true;
+    document.getElementById("resultado_entrevista").value = records[0][29];
+    document.getElementById("seccion").value = records[0][1];
+    document.getElementById("message").innerHTML =
+      "<div class='alert alert-warning' role='alert'>Update Record [ID: " +
+      records[0][0] +
+      "]</div>";
+  }
+</script>

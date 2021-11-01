@@ -40,7 +40,7 @@ mongoose
 // define a route
 
 app.get("/", (req, res) => {
-  res.json({ message: "Welcome to Platzi Master... I will be your guide" });
+  res.sendFile(__dirname + "/index.html");
 });
 
 // Require routes

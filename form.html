@@ -1,0 +1,209 @@
+<form id="myForm" class>
+        <p class="h4 mb-4 text-center">Registro</p>
+        <div id="message"></div>
+        <input
+          type="text"
+          id="RecId"
+          name="RecId"
+          value=""
+          style="display: none"
+        />
+        <div class="form-group">
+          <label for="phone">Telefono</label>
+          <input
+            type="text"
+            class="form-control"
+            id="phone"
+            name="phone"
+            placeholder="Telefono"
+            disabled
+          />
+        </div>
+        <div class="form-group">
+          <label for="name">Nombre</label>
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            name="name"
+            placeholder="Nombre"
+          />
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="paterno">Paterno</label>
+            <input
+              type="text"
+              class="form-control"
+              id="paterno"
+              name="paterno"
+              placeholder="Paterno"
+            />
+          </div>
+          <div class="form-group col-md-6">
+            <label for="materno">Materno</label>
+            <input
+              type="text"
+              class="form-control"
+              id="materno"
+              name="materno"
+              placeholder="Materno"
+            />
+          </div>
+        </div>
+      </select>
+  </div>
+<div class="form-group">
+  <label for="name" >Dirección</label>
+  <input type="text" class="form-control" id="address" name="adress" placeholder="Dirección correcta">
+</div>
+<div class="form-row">
+  <div class="form-group col-md-6">
+    <p>1. ¿El nombre es correcto?</p>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="radio" name="name_correct" id="nombre_correcto_si" value="Si">
+      <label class="form-check-label" for="nombre_correcto_si">Si</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="radio" name="name_correct" id="nombre_correcto_no" value="No">
+      <label class="form-check-label" for="nombre_correcto_no">No</label>
+    </div>
+  </div>
+  <div class="form-group col-md-6">
+    <p>2. ¿La dirección es correcta?</p>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="radio" name="address_correct" id="direccion_correcta_si" value="Si">
+      <label class="form-check-label" for="direccion_correcta_si">Si</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="radio" name="address_correct" id="direccion_correcta_no" value="No">
+      <label class="form-check-label" for="direccion_correcta_no">No</label>
+    </div>
+  </div>
+</div>
+<div class="form-group">
+    <p id="nombre_enlace">3. ¿Conoce a (NOMBRE DEL ENLACE)?</p>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="radio" name="conoce_enlace" id="conoce_enlace_si" value="Si">
+      <label class="form-check-label" for="conoce_enlace_si">Si</label>
+     </div>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="radio" name="conoce_enlace" id="conoce_enlace_no" value="No">
+      <label class="form-check-label" for="conoce_enlace_no">No</label>
+      </div>
+  </div>
+  <div class="form-group">
+    <p>4. ¿Él/ella lo invitó a participar activamente en el partido? </p>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="radio" name="invito" id="invito_si" value="Si">
+      <label class="form-check-label" for="invito_si">Si</label>
+      </div>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="radio" name="invito" id="invito_no" value="No">
+      <label class="form-check-label" for="invito_no">No</label>
+      </div>
+  </div>
+<!-- ########## -->
+<div class="form-group">
+  <p>5. ¿Votaría usted por Omar Castañeda, candidato a diputado federal por el segundo distrito?</p>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="votaria" id="votaria_si" value="Si">
+    <label class="form-check-label" for="votaria_si">Si</label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="votaria" id="votaria_no" value="No">
+    <label class="form-check-label" for="votaria_no">No</label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="votaria" id="votaria_no_se" value="No sé">
+    <label class="form-check-label" for="votaria_no_se">No sé</label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="votaria" id="votaria_prefiero_no_decir" value="Prefiero no decir">
+    <label class="form-check-label" for="votaria_prefiero_no_decir">Prefiero no decir</label>
+  </div>
+</div>
+<div class="form-group">
+  <p>6. ¿Le gustaría recibir información adicional sobre el partido y sus candidatos?</p>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="info" id="info_si" value="Si">
+    <label class="form-check-label" for="info_si">Si</label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="info" id="info_no" value="No">
+    <label class="form-check-label" for="info_no">No</label>
+  </div>
+</div>
+<div class="form-group">
+  <p> <i>En caso de respuesta afirmativa a la pregunta anterior: </i></p>
+  </div>
+<div class="form-row">
+  <div class="form-group col-md-6">
+    <p>¿Nos puede proporcionar su correo electrónico?</p>
+        <input type="email" class="form-control" id="email" name="email" placeholder="Correo electrónico">      
+    </div>
+  <div class="form-group col-md-6">
+    <p>¿Algún teléfono adicional que desee proporcionar?</p>
+    <input type="tel" class="form-control" id="telefono_adicional" name="telefono_adicional" placeholder="Teléfono Adicional">      
+    </div>
+  </div>
+  <!-- ########## -->
+<div class="form-group">
+  <label for = "comentario_gral">Comentario General</label>
+  <select class="form-control" id="comentario_gral" name="comentario_gral">
+  <option value=''>Sin comentario</option>
+  <option value='Apoya al partido'>Apoya al partido</option>
+  <option value='Contesta alguien diferente / No se encuentra el registrado'>Contesta alguien diferente / No se     encuentra el registrado</option>
+  <option value='Contesta la llamada y cuelga'>Contesta la llamada y cuelga</option>
+  <option value='Datos duplicados'>Datos duplicados</option>
+  <option value='Datos erróneos'>Datos erróneos</option>
+  <option value='El teléfono es del enlace'>El teléfono es del enlace</option>
+  <option value='Entrevista positiva'>Entrevista positiva</option>
+  <option value='Indeciso'>Indeciso</option>
+  <option value='No contesta (buzón de voz)'>No contesta (buzón de voz)</option>
+  <option value='No contesta por desconfianza'>No contesta por desconfianza</option>
+  <option value='No está interesado'>No está interesado</option>
+  <option value='No tiene tiempo para encuesta'>No tiene tiempo para encuesta</option>
+  <option value='Número equivocado'>Número equivocado</option>
+  <option value='Otro'>Otro (especificar en recuadro)</option>
+  <option value='Problemas con domicilio'>Problemas con domicilio</option>
+  <option value='Problemas con enlace'>Problemas con enlace</option>
+  <option value='Ya le habían hablado anteriormente'>Ya le habían hablado anteriormente</option>
+  <option value='Problemas con teléfono'>Problemas con teléfono</option>
+</select>
+</div>
+<div class="form-group">
+<label for="comments">7. Comentarios del entrevistador</label><br>
+<textarea type="text" class="form-control" id="comments" name="comments" cols="40" rows="5" placeholder="Comentarios"></textarea>
+</div>
+<!-- RESULTADO DE LA ENTREVISTA -->
+<div class="form-group col-md-9">
+        <p>Resultado de la Entrevista:</p>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="resultado_entrevista" id="resultado_entrevista_ok" value="Entrevista terminada">
+            <label class="form-check-label" for="resultado_entrevista_ok">Entrevista terminada</label>
+        </div><br>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="resultado_entrevista" id="resultado_entrevista_nc" value="Colgó">
+            <label class="form-check-label" for="resultado_entrevista_nc">Colgó</label>
+        </div><br>
+  <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="resultado_entrevista" id="resultado_entrevista_incompleta" value="Incompleta">
+            <label class="form-check-label" for="resultado_entrevista_incompleta">Incompleta</label>
+        </div><br>
+  <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="resultado_entrevista" id="resultado_entrevista_buzon" value="Mandó a buzón">
+            <label class="form-check-label" for="resultado_entrevista_buzon">Mandó a buzón</label>
+        </div><br>
+  <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="resultado_entrevista" id="resultado_entrevista_notel" value="Sin teléfono">
+            <label class="form-check-label" for="resultado_entrevista_notel">Sin teléfono</label>
+        </div><br>
+<div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="resultado_entrevista" id="resultado_entrevista_telinc" value="Teléfono incorrecto">
+            <label class="form-check-label" for="resultado_entrevista_telinc">Teléfono incorrecto</label>
+        </div>
+    </div>
+<button type="submit" class="btn btn-primary">Registrar</button>
+<input class="btn btn-secondary" type="reset" value="Reset">
+      </form>
