@@ -5,8 +5,7 @@ const mongoose = require("mongoose");
 const EnlaceSchema = mongoose.Schema({
   clave_enlace: String,
   nombre_enlace: String,
-  captura_externa: String,
-  fecha_captura_externa: Date
+  captura_externa: String
 });
 
 module.exports = mongoose.model("Enlace", EnlaceSchema);
