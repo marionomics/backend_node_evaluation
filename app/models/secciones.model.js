@@ -3,10 +3,12 @@ const mongoose = require("mongoose");
 // Model for secciones
 
 const SeccionSchema = mongoose.Schema({
-    seccion = Number,
-    distrito_fed = Number,
-    municipio = String,
-    estado = String
+    ENTIDAD = Number,
+    `NOMBRE ENTIDAD` = String,
+    MUNICIPIO = Number,
+    `NOMBRE MUNICIPIO` = String,
+    SECCION = Number,
+    TIPO = String
 });
 
 module.exports = mongoose.model("Seccion", SeccionSchema)
